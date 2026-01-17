@@ -10,6 +10,7 @@
 <body>
   <main class="container">
     <header>
+      <button id="themeToggle">☀︎</button>
       <h1>Miku</h1>
       <p class="subtitle">Private thoughts. Public silence.</p>
     </header>
@@ -44,6 +45,17 @@
 
 <script data-goatcounter="https://mishan.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+<script>
+  const btn = document.getElementById("themeToggle");
+  const root = document.documentElement;
+
+  btn.onclick = () => {
+    const isLight = root.getAttribute("data-theme") === "light";
+    root.setAttribute("data-theme", isLight ? "dark" : "light");
+    btn.textContent = isLight ? "☀︎" : "☾";
+  };
+</script>
   
 </body>
 </html>
