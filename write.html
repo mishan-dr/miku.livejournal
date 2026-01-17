@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Write — Miku</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Write</h1>
+      <p class="subtitle">No audience. No filters.</p>
+    </header>
+
+    <input id="date" type="text" placeholder="Date (e.g. 17 Jan 2026)" />
+
+    <textarea
+      id="content"
+      placeholder="Write brutally honest thoughts here..."
+      rows="12">
+    </textarea>
+
+    <button onclick="generate()">Generate Entry</button>
+
+    <pre id="output"></pre>
+  </main>
+
+  <script src="js/write.js"></script>
+</body>
+</html>
