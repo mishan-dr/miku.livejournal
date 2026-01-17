@@ -8,11 +8,16 @@ function generate() {
     return;
   }
 
+  const now = new Date();
+  const time =
+    now.getHours().toString().padStart(2, "0") +
+    ":" +
+    now.getMinutes().toString().padStart(2, "0");
+
   let imagesHTML = "";
 
   if (imagesRaw) {
-    const images = imagesRaw.split(",").map(i => i.trim());
-    images.forEach(src => {
+    imagesRaw.split(",").map(i => i.trim()).forEach(src => {
       imagesHTML += `\n  <img src="${src}" alt="">\n`;
     });
   }
@@ -20,6 +25,7 @@ function generate() {
   const html = `
 <article class="entry">
   <h2>${date}</h2>
+  <time>${time}</time>
   ${imagesHTML}
   <p>
     ${content.replace(/\n/g, "<br>")}
