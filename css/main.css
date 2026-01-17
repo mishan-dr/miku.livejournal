@@ -50,3 +50,34 @@ h1 {
 .entry p {
   margin: 0;
 }
+
+input, textarea {
+  width: 100%;
+  background: #161821;
+  border: 1px solid #2a2f3a;
+  color: var(--text);
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+pre {
+  background: #0b0d12;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+}
