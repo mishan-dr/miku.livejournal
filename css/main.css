@@ -88,7 +88,9 @@ pre {
 }
 .entry time {
   display: block;
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-bottom: 0.8rem;
+  font-size: 0.75rem;
+  color: #7a7f8a;
+  opacity: 0.8;
+  margin-top: -0.4rem;
+  margin-bottom: 1rem;
 }
