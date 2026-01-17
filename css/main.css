@@ -38,7 +38,12 @@ h1 {
 }
 
 .entry {
-  margin-bottom: 3rem;
+  background: #151821;
+  border: 1px solid #222634;
+  border-radius: 14px;
+  padding: 1.5rem 1.6rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .entry h2 {
