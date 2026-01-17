@@ -47,12 +47,15 @@ h1 {
 }
 
 .entry h2 {
-  color: var(--accent);
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #cfd3ff;
+  margin: 0;
 }
 
 .entry p {
+  font-size: 1rem;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -88,7 +91,7 @@ pre {
 }
 .entry img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 1rem 0;
 }
 .entry time {
@@ -98,4 +101,7 @@ pre {
   opacity: 0.8;
   margin-top: -0.4rem;
   margin-bottom: 1rem;
+}
+.container {
+  max-width: 680px;
 }
