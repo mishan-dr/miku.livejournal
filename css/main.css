@@ -1,8 +1,19 @@
 :root {
   --bg: #0f1117;
+  --card: #151821;
+  --border: #222634;
   --text: #e6e6eb;
-  --muted: #9aa0aa;
+  --muted: #7a7f8a;
   --accent: #7aa2f7;
+}
+
+[data-theme="light"] {
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --border: #e0e3eb;
+  --text: #1a1c22;
+  --muted: #6b7280;
+  --accent: #2563eb;
 }
 
 * {
@@ -38,12 +49,8 @@ h1 {
 }
 
 .entry {
-  background: #151821;
-  border: 1px solid #222634;
-  border-radius: 14px;
-  padding: 1.5rem 1.6rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background: var(--card);
+  border: 1px solid var(--border);
 }
 
 .entry h2 {
@@ -104,4 +111,12 @@ pre {
 }
 .container {
   max-width: 680px;
+}
+.entry {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
 }
