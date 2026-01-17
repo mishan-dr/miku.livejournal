@@ -9,10 +9,12 @@ function generate() {
   }
 
   const now = new Date();
-  const time =
-    now.getHours().toString().padStart(2, "0") +
-    ":" +
-    now.getMinutes().toString().padStart(2, "0");
+let hours = now.getHours();
+const minutes = now.getMinutes().toString().padStart(2, "0");
+const ampm = hours >= 12 ? "PM" : "AM";
+hours = hours % 12 || 12;
+
+const time = `${hours}:${minutes} ${ampm}`;
 
   let imagesHTML = "";
 
