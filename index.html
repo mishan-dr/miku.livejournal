@@ -2,130 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Miku - A private journal.">
   <title>Miku — Journal</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-
-  <style>
-    /* --- CSS Variables for Theme Management --- */
-    :root {
-      --bg-color: #faf9f6;       /* Off-white paper color */
-      --text-color: #2c2c2c;     /* Soft black for readability */
-      --accent-color: #666;      /* Muted grey for dates */
-      --spacing-unit: 1.5rem;
-      --max-width: 680px;        /* Optimal reading width */
-    }
-
-    /* --- Reset & Base Styles --- */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.7;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased; /* Crisper text on Mac */
-    }
-
-    /* --- Layout Container --- */
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 4rem 1.5rem; /* Top/Bottom padding, Left/Right padding */
-    }
-
-    /* --- Header Design --- */
-    header {
-      margin-bottom: 5rem;
-      text-align: left;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-      padding-bottom: 2rem;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-      font-size: 0.95rem;
-      color: var(--accent-color);
-      font-weight: 400;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    /* --- Journal Entries --- */
-    .entry {
-      margin-bottom: 4rem; /* Space between entries */
-      animation: fadeIn 0.8s ease-in-out;
-    }
-
-    /* The Date styling */
-    .entry h2 {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--accent-color);
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    /* The Body Text */
-    .entry p {
-      font-family: 'Playfair Display', serif; /* Serif for body looks like a book */
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-      color: #1a1a1a;
-    }
-
-    /* Images */
-    .entry img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Subtle shadow */
-      display: block;
-    }
-
-    /* --- Footer --- */
-    footer {
-      margin-top: 5rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(0,0,0,0.05);
-      text-align: center;
-      font-size: 0.8rem;
-      color: #aaa;
-    }
-
-    /* --- Simple Animation --- */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* --- Mobile Adjustments --- */
-    @media (max-width: 600px) {
-      h1 { font-size: 2.5rem; }
-      .container { padding-top: 2rem; }
-      .entry p { font-size: 1.1rem; }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -136,35 +15,29 @@
     </header>
 
     <article class="entry">
-      <time datetime="2026-01-24">24 Jan 2026</time> <h2>24 Jan 2026</h2>
-      
-      <img src="images/2026.png" alt="A visual memory from 2026" onerror="this.style.display='none'"> 
-
-      <p>
-        Maybe I'm wrong, but I am right.
-      </p>
-    </article>
-
-    <article class="entry">
       <h2>17 Jan 2026</h2>
       <p>
-        This journal exists to reduce noise.<br>
-        Not to impress.<br>
+        This journal exists to reduce noise.  
+        Not to impress.  
         Not to explain.
       </p>
     </article>
-
+<article class="entry">
+  <h2>5 march 2021</h2>
+  <p>
+    i loose my destiny once and sacrificed many thing i cant do that again,<br>now i want that that few have
+  </p>
+</article>
     <article class="entry">
-      <h2>5 Mar 2021</h2>
-      <p>
-        I lost my destiny once and sacrificed many things. I can't do that again.<br>
-        Now I want what few have.
-      </p>
-    </article>
+  <h2>24 Jan 2026</h2>
+  
+  <img src="images/2026.png" alt="">
 
-    <footer>
-      &copy; Miku Journal
-    </footer>
+  <p>
+    maybe im wrong but iam right
+  </p>
+</article>
+    <!-- duplicate article blocks for new entries -->
 
   </main>
 </body>
