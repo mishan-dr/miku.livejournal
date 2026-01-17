@@ -120,3 +120,31 @@ pre {
   transform: translateY(-2px);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
 }
+#themeToggle {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.entry.pinned {
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 0 1px rgba(122,162,247,0.4);
+}
+
+.entry.pinned::before {
+  content: "Latest";
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.year {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 3rem 0 2rem;
+  letter-spacing: 0.2em;
+}
